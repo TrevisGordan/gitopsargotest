@@ -5,7 +5,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: whoami
+  namespace: whoami-argo
   name: whoami-service
   labels:
     app: whoami-app
@@ -23,7 +23,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: whoami
+  namespace: whoami-argo
   name: whoami-deployment
   labels:
     app: whoami-app
